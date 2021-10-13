@@ -1,0 +1,26 @@
+# Joy-of-coding-13.10.21-
+#include <stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<ctype.h>
+#define MAX_LIMIT 20
+int main()
+{
+   char str[MAX_LIMIT];
+   fgets(str, MAX_LIMIT, stdin);
+   printf("%s", str);
+   int len = strlen(str);
+   printf("Length of string : %d\n", len);
+   char example[100];
+    strcpy(example, "RNS INstitue of Technology ");
+    strcat(example, "Bengaluru");
+     printf("%s\n", example);
+    int j = 0;
+    char st[] = "RNS Institute of Technology\n";
+    char ch;
+    while (st[j]) {
+        ch = st[j];
+      putchar(toupper(ch));
+        j++;
+    }
+}
